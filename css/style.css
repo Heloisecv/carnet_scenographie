@@ -134,8 +134,8 @@ code { font-family: var(--machine); font-size: .9em; }
 .entete__titre:hover { text-decoration: none; color: var(--crimson-sec); }
 
 @media (max-width: 1500px) {
-  .menu { gap: .6rem; }
-  .menu a { letter-spacing: .1em; }
+  .menu { gap: .4rem; }
+  .menu a { letter-spacing: .07em; }
   .entete__titre { font-size: 1.25rem; padding-inline: .25rem; }
 }
 
