@@ -22,7 +22,7 @@ const SITE = {
   titre: "Scénographie en bazar",
 
   // Petite ligne affichée en bas de chaque page
-  signature: "Héloïse Carvalhinha-Viegas — conception scénographique",
+  signature: "Projet interdisciplinaire - Héloïse Carvalhinha-Viegas",
 
   // Les pages du parcours, dans l'ordre.
   // statut possible : "explorer", "en-cours", "valider", "retenu", "realise"
