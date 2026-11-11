@@ -17,8 +17,6 @@ Après chaque modification, enregistre le fichier (Cmd + S) puis recharge la pag
 | changer une **couleur / une police**       | `css/style.css` → partie 1 « RÉGLAGES »  |
 | déplacer un **objet du bureau** (accueil)  | `index.html` → `style="--x … --y … --w … --r …"` de l'objet |
 
-Pour voir toutes les briques visuelles d'un coup, ouvre `pages/charte.html` (lien « Charte graphique » en bas de chaque page).
-
 ## Les repères dans le code
 - `class="a-ecrire"` : un texte encore à rédiger (le post-it rose). Remplace tout le paragraphe par `<p>Ton texte</p>`.
 - `class="emplacement"` : une photo à venir (tirage hachuré au crayon).

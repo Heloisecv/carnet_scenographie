@@ -22,7 +22,7 @@ const SITE = {
   titre: "Scénographie en bazar",
 
   // Petite ligne affichée en bas de chaque page
-  signature: "[Ton nom] — conception scénographique",
+  signature: "Héloïse Carvalhinha-Viegas — conception scénographique",
 
   // Les pages du parcours, dans l'ordre.
   // statut possible : "explorer", "en-cours", "valider", "retenu", "realise"
@@ -128,7 +128,6 @@ if (pied) {
       ${i >= 0 ? `<nav class="suite" aria-label="Chapitres">${lien(prec, "Précédent")}${lien(suiv, "Suivant")}</nav>` : ""}
       <div class="pied">
         <span>${SITE.signature}</span>
-        <span><a href="${chemin("pages/charte.html")}">Charte graphique</a> · Projet étudiant, en cours</span>
       </div>
     </div>`;
 }
