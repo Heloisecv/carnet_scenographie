@@ -27,7 +27,7 @@ const SITE = {
   // Les pages du parcours, dans l'ordre.
   // statut possible : "explorer", "en-cours", "valider", "retenu", "realise"
   pages: [
-    { num: "00", court: "Le projet",      titre: "Le projet",                        fichier: "index.html",                        statut: "en-cours" },
+    { num: "00", court: "L'origine du projet", titre: "L'origine du projet",        fichier: "index.html",                        statut: "en-cours" },
     { num: "01", court: "Lire, préparer", titre: "Lire, préparer, rechercher",       fichier: "pages/01-lire-preparer.html",       statut: "en-cours" },
     { num: "02", court: "Maquette blanche", titre: "La maquette blanche",            fichier: "pages/02-maquette-blanche.html",    statut: "explorer" },
     { num: "03", court: "Dessin technique", titre: "Du volume au dessin technique",  fichier: "pages/03-dessin-technique.html",    statut: "explorer" },
@@ -71,13 +71,13 @@ if (entete) {
       <li><a href="${chemin(p.fichier)}" ${p.num === PAGE_ACTUELLE ? 'aria-current="page"' : ""}>
         <span class="num">${p.num}</span><span class="libelle">${p.court}</span>
       </a></li>`;
-  const etapes = SITE.pages.filter((p) => p.num !== "00");
-  const moitie = Math.ceil(etapes.length / 2);
+  const etapes = SITE.pages;
+  const moitie = Math.floor(etapes.length / 2);
 
   entete.classList.add("entete");
   entete.innerHTML = `
     <div class="conteneur entete__ligne">
-      <nav aria-label="Étapes 01 à 0${moitie}"><ul class="menu menu--gauche">${etapes.slice(0, moitie).map(lien).join("")}</ul></nav>
+      <nav aria-label="Premières étapes"><ul class="menu menu--gauche">${etapes.slice(0, moitie).map(lien).join("")}</ul></nav>
       <a class="entete__titre" href="${chemin("index.html")}">${SITE.titre}</a>
       <nav aria-label="Étapes suivantes"><ul class="menu menu--droite">${etapes.slice(moitie).map(lien).join("")}</ul></nav>
       <button class="bouton-menu" aria-expanded="false" aria-controls="menu-mobile">Sommaire</button>

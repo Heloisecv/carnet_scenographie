@@ -113,12 +113,12 @@ code { font-family: var(--machine); font-size: .9em; }
   display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: var(--e-3);
   padding-block: var(--e-3) var(--e-2);
 }
-.menu { display: flex; gap: clamp(.65rem, 1vw, 1rem); list-style: none; margin: 0; padding: 0; }
+.menu { display: flex; gap: .3rem; list-style: none; margin: 0; padding: 0; }
 .menu--gauche { justify-content: flex-start; }
 .menu--droite { justify-content: flex-end; }
 .menu a {
   font-family: var(--capitales); font-weight: 600; font-size: var(--t-xs);
-  text-transform: uppercase; letter-spacing: .12em;
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .025em;
   color: var(--encre); text-decoration: none; white-space: nowrap;
   padding-bottom: .3rem; border-bottom: 1.5px dashed transparent;
 }
@@ -127,17 +127,11 @@ code { font-family: var(--machine); font-size: .9em; }
 .menu a[aria-current="page"] { color: var(--crimson); border-bottom-color: var(--crimson); }
 
 .entete__titre {
-  font-family: var(--plume); font-size: clamp(1.15rem, .9rem + .9vw, 1.7rem);
+  font-family: var(--plume); font-size: 1rem;
   color: var(--crimson); text-decoration: none; text-align: center; line-height: 1.6;
-  justify-self: center; padding-inline: .5rem; white-space: nowrap;
+  justify-self: center; padding-inline: .1rem; white-space: nowrap;
 }
 .entete__titre:hover { text-decoration: none; color: var(--crimson-sec); }
-
-@media (max-width: 1500px) {
-  .menu { gap: .4rem; }
-  .menu a { letter-spacing: .07em; }
-  .entete__titre { font-size: 1.25rem; padding-inline: .25rem; }
-}
 
 .bouton-menu {
   display: none; justify-self: end;
@@ -186,7 +180,7 @@ code { font-family: var(--machine); font-size: .9em; }
 .pied { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--e-2); padding-block: var(--e-4) var(--e-5); font-family: var(--machine); font-size: var(--t-xs); color: var(--crayon); }
 .pied a { color: var(--crayon); }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .entete__ligne { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
   .entete__ligne > nav { display: none; }
   .entete__titre { grid-column: 2; max-width: calc(100vw - 9rem); }
@@ -518,14 +512,21 @@ figcaption .num, .legende .num { font-family: var(--machine); font-size: var(--t
 
 /* — 00 · le billet (renvoie vers « le projet » plus bas) — */
 .billet {
-  display: grid; grid-template-columns: 1fr auto; background: var(--post-it) url("../images/dessins/grain.svg"); box-shadow: var(--ombre);
+  display: grid; grid-template-columns: 1fr; background: var(--post-it) url("../images/dessins/grain.svg"); box-shadow: var(--ombre);
   -webkit-mask: radial-gradient(circle 9px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 9px at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
           mask: radial-gradient(circle 9px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 9px at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
 }
-.billet__corps { padding: .9rem 1rem .8rem 1.3rem; border-right: 2px dashed rgba(165,28,48,.45); }
-.billet__corps .machine { display: block; font-size: .64rem; letter-spacing: .14em; color: var(--crimson); }
-.billet__corps .plume { display: block; font-size: 1.05rem; line-height: 1.9; }
-.billet__souche { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--machine); font-size: .6rem; letter-spacing: .2em; color: var(--crimson); padding: .6rem .5rem; text-align: center; }
+.objet--billet { isolation: isolate; }
+.objet--billet::before, .objet--billet::after {
+  content: ""; position: absolute; z-index: 1; inset: -.65rem -.55rem;
+  border: 1.5px solid var(--crimson); border-radius: 52% 46% 50% 49% / 47% 54% 46% 52%;
+  transform: rotate(-7deg); pointer-events: none;
+}
+.objet--billet::after { inset: -.8rem -.35rem; border-radius: 46% 54% 48% 52% / 53% 45% 55% 47%; opacity: .48; transform: rotate(4deg); }
+.objet--billet .billet { position: relative; z-index: 2; }
+.billet__corps { padding: .8rem .9rem; text-align: center; }
+.billet__origine { display: block; color: var(--encre); font-family: var(--capitales); font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.billet__projet { display: block; color: var(--encre); font-family: var(--plume); font-size: 1.2rem; line-height: 1.5; }
 
 /* — 01 · page de livret annotée — */
 .faux-texte { display: grid; gap: .78rem; margin-top: .9rem; }
