@@ -19,7 +19,7 @@
    ===================================================================== */
 const SITE = {
   // Le titre du projet : change-le ici, il se met à jour partout.
-  titre: "Titre à venir",
+  titre: "Scénographie en bazar",
 
   // Petite ligne affichée en bas de chaque page
   signature: "[Ton nom] — conception scénographique",
