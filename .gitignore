@@ -1,0 +1,14 @@
+# Fichiers liés aux assistants IA : gardés sur l'ordinateur, jamais envoyés sur GitHub
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+AGENTS.md
+GEMINI.md
+.cursor/
+.cursorrules
+.github/copilot-instructions.md
+.aider*
+.codex/
+
+# Fichiers système du Mac
+.DS_Store
