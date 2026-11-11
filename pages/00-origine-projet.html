@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20261111-5">
+  <link rel="stylesheet" href="../css/style.css?v=20261111-6">
 </head>
 
 <body data-racine=".." data-page="00">
@@ -22,26 +22,64 @@
         <span class="ornement" aria-hidden="true"></span>
       </header>
 
-      <div class="colonne">
-        <figure class="marge-g incline" style="--r: -4deg;">
-          <div class="emplacement emplacement--polaroid scotch"><span>photo de la troupe ou des répétitions</span></div>
-          <figcaption>[légende à venir]</figcaption>
-        </figure>
+      <!-- =====================================================
+           MENU DÉROULANT 1 : « Qui suis-je ? »
+           Le titre cliquable est dans <summary>.
+           Le contenu (caché tant qu'on n'a pas cliqué) est juste en dessous.
+           ===================================================== -->
+      <details class="deroulant">
+        <summary>Qui suis-je ?</summary>
+        <div class="deroulant__contenu">
+          <div class="colonne">
+            <figure class="marge-g incline" style="--r: -4deg;">
+              <div class="emplacement emplacement--polaroid scotch"><span>photo de la troupe ou des répétitions</span></div>
+              <figcaption>[légende à venir]</figcaption>
+            </figure>
 
-        <h4>La production</h4>
-        <p class="a-ecrire">Présenter la production réelle de Legally Blonde : la troupe, l'équipe, les dates, le lieu.</p>
+            <h4>La production</h4>
+            <p class="a-ecrire">Présenter la production réelle de Legally Blonde : la troupe, l'équipe, les dates, le lieu.</p>
 
-        <h4>Mon rôle au pôle décor</h4>
-        <p class="a-ecrire">Ta place dans l'équipe décor et tes échanges avec la mise en scène.</p>
+            <h4>Mon rôle au pôle décor</h4>
+            <p class="a-ecrire">Ta place dans l'équipe décor et tes échanges avec la mise en scène.</p>
 
-        <figure class="marge-d incline" style="--r: 3deg;">
-          <div class="emplacement scotch scotch--beige" style="--ratio: 3/4;"><span>un croquis, une page du carnet</span></div>
-          <figcaption>[légende à venir]</figcaption>
-        </figure>
+            <figure class="marge-d incline" style="--r: 3deg;">
+              <div class="emplacement scotch scotch--beige" style="--ratio: 3/4;"><span>un croquis, une page du carnet</span></div>
+              <figcaption>[légende à venir]</figcaption>
+            </figure>
 
-        <h4>Pourquoi ce projet</h4>
-        <p class="a-ecrire">Ta motivation : scénographie, direction artistique, décor de cinéma, spectacle vivant, candidatures.</p>
-      </div>
+            <h4>Pourquoi ce projet</h4>
+            <p class="a-ecrire">Ta motivation : scénographie, direction artistique, décor de cinéma, spectacle vivant, candidatures.</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- =====================================================
+           MENU DÉROULANT 2 : « Legally Blonde, c'est quoi ? »
+           Même présentation que « Le script annoté » (page 01) :
+           une image à gauche, des notes à droite.
+           ===================================================== -->
+      <details class="deroulant">
+        <summary>Legally Blonde, c'est quoi&nbsp;?</summary>
+        <div class="deroulant__contenu">
+          <div class="script-planche">
+            <!-- ✏️ L'image à gauche (remplacer le bloc "emplacement" par une image, voir LISEZ-MOI) -->
+            <figure class="incline" style="--r: -1.5deg;">
+              <div class="emplacement emplacement--polaroid scotch" style="--ratio: 3/4;"><span>affiche ou image du spectacle</span></div>
+              <figcaption>[légende à venir]</figcaption>
+            </figure>
+            <div>
+              <!-- ✏️ Le post-it : remplacer toute la ligne par <p>Ton texte</p> -->
+              <p class="a-ecrire">Présenter Legally Blonde : l'histoire, d'où vient l'œuvre (film, comédie musicale), les personnages, les lieux.</p>
+              <!-- ✏️ La note rose : titre dans <h4>, texte dans les <p> -->
+              <div class="papier papier--rose incline" style="--r: 1.2deg; margin-top: var(--e-4);">
+                <h4 style="margin-top:0;">[titre à préciser]</h4>
+                <p class="note-crayon" style="font-size:1.2rem; color: var(--encre);">[À préciser]</p>
+                <p class="note-crayon note-crayon--encre" style="font-size:1.15rem; margin:0;">→ [à préciser]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
 
       <div class="lettre papier papier--ligne scotch scotch--coin incline" style="--r: -1deg;">
         <span class="etiquette etiquette--petite">Le principe</span>
@@ -89,6 +127,6 @@
   </main>
 
   <footer data-pied></footer>
-  <script src="../js/script.js?v=20261111-5"></script>
+  <script src="../js/script.js?v=20261111-6"></script>
 </body>
 </html>

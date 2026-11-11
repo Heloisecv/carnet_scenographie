@@ -615,6 +615,27 @@ figcaption .num, .legende .num { font-family: var(--machine); font-size: var(--t
 .large { width: min(1100px, 100vw - 2 * var(--marge)); position: relative; left: 50%; transform: translateX(-50%); }
 .clair { clear: both; }
 
+/* 00 · Menus déroulants (« Qui suis-je ? », « Legally Blonde, c'est quoi ? »)
+   On clique sur le titre (summary) pour ouvrir ou fermer le contenu.
+   Le titre est écrit au crayon (Reenie Beanie), entre deux pointillés « couture ». */
+.deroulant { max-width: 1000px; margin: 0 auto var(--e-4); border-block: 1.5px dashed rgba(165,28,48,.45); }
+.deroulant + .deroulant { margin-top: calc(-1 * var(--e-4) - 1.5px); } /* deux menus collés : une seule couture */
+.deroulant > summary {
+  list-style: none; cursor: pointer; text-align: center;
+  font-family: var(--crayon-police); font-size: calc(var(--t-xl) * 1.3); color: var(--encre); /* brun d'encre #3A2523 */ line-height: 1.2; /* Reenie Beanie est petite : on l'agrandit un peu */
+  padding: var(--e-3) var(--e-2) var(--e-2);
+}
+.deroulant > summary::-webkit-details-marker { display: none; }
+/* petite mention « ouvrir / fermer » à la machine à écrire, sous le titre */
+.deroulant > summary::after {
+  content: "ouvrir ▾"; display: block;
+  font-family: var(--machine); font-size: var(--t-xs); letter-spacing: .2em; text-transform: uppercase; color: var(--crayon);
+}
+.deroulant[open] > summary::after { content: "fermer ▴"; }
+.deroulant > summary:hover { color: var(--crimson-sec); }
+.deroulant__contenu { padding-block: var(--e-3) var(--e-5); }
+.deroulant__contenu::after { content: ""; display: block; clear: both; } /* garde les photos en marge à l'intérieur */
+
 /* 01 · planche du script */
 .script-planche { display: grid; grid-template-columns: 1.2fr 1fr; gap: var(--e-5); align-items: start; }
 .palette-provisoire { display: flex; gap: var(--e-2); flex-wrap: wrap; justify-content: center; margin-block: var(--e-3); }

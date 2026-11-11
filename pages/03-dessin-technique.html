@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20261111-5">
+  <link rel="stylesheet" href="../css/style.css?v=20261111-6">
 </head>
 
 <!-- data-racine=".." : cette page est dans le dossier pages/ -->
@@ -30,7 +30,7 @@
     </header>
 
 
-    <!-- Registre des dessins : modifier data-statut="…" pour changer un statut -->
+    <!-- Registre des dessins -->
     <section class="section" id="registre" data-nom="Registre">
       <div class="section__tete">
         <span class="etiquette etiquette--petite">index</span>
@@ -39,16 +39,16 @@
       <div class="papier papier--ligne incline large" style="--r: .4deg; max-width: 1000px;">
         <div class="tableau-conteneur">
           <table class="tableau-tech">
-            <thead><tr><th>N°</th><th>Document</th><th>Échelle</th><th>Logiciel</th><th>Version</th><th>Statut</th></tr></thead>
+            <thead><tr><th>N°</th><th>Document</th><th>Échelle</th><th>Logiciel</th><th>Version</th></tr></thead>
             <tbody>
-              <tr><td>D-01</td><td>Plan au sol avec masking</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
-              <tr><td>D-02</td><td>Coupe sur l'axe central</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
-              <tr><td>D-03</td><td>Fonds et cycloramas</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
-              <tr><td>D-04</td><td>Mobilier construit sur mesure</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
-              <tr><td>D-05</td><td>Accessoires construits sur mesure</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
-              <tr><td>D-06</td><td>Élévations de peinture</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
-              <tr><td>D-07</td><td>Luminaires intégrés au décor</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
-              <tr><td>—</td><td>Furniture plot (inventaire du mobilier)</td><td>—</td><td>—</td><td>—</td><td><span data-statut="non-produit"></span></td></tr>
+              <tr><td>D-01</td><td>Plan au sol avec masking</td><td>[—]</td><td>[—]</td><td>—</td></tr>
+              <tr><td>D-02</td><td>Coupe sur l'axe central</td><td>[—]</td><td>[—]</td><td>—</td></tr>
+              <tr><td>D-03</td><td>Fonds et cycloramas</td><td>[—]</td><td>[—]</td><td>—</td></tr>
+              <tr><td>D-04</td><td>Mobilier construit sur mesure</td><td>[—]</td><td>[—]</td><td>—</td></tr>
+              <tr><td>D-05</td><td>Accessoires construits sur mesure</td><td>[—]</td><td>[—]</td><td>—</td></tr>
+              <tr><td>D-06</td><td>Élévations de peinture</td><td>[—]</td><td>[—]</td><td>—</td></tr>
+              <tr><td>D-07</td><td>Luminaires intégrés au décor</td><td>[—]</td><td>[—]</td><td>—</td></tr>
+              <tr><td>—</td><td>Furniture plot (inventaire du mobilier)</td><td>—</td><td>—</td><td>—</td></tr>
             </tbody>
           </table>
         </div>
@@ -70,7 +70,6 @@
           <div><span class="cle">Échelle</span>[—]</div>
           <div><span class="cle">Version</span>[—]</div>
           <div><span class="cle">Date</span>[—]</div>
-          <div><span data-statut="explorer"></span></div>
         </div>
         <div class="fonction">
           <div><h4>À quoi sert ce document</h4><p>Il représente la scène vue du dessus avec les éléments de décor, les limites du plateau et le masking : pendrillons et frises qui cachent les coulisses au public. Il fait comprendre l'implantation, les dimensions, les accès et les zones cachées.</p></div>
@@ -95,7 +94,6 @@
           <div><span class="cle">Échelle</span>[—]</div>
           <div><span class="cle">Version</span>[—]</div>
           <div><span class="cle">Date</span>[—]</div>
-          <div><span data-statut="explorer"></span></div>
         </div>
         <div class="fonction">
           <div><h4>À quoi sert ce document</h4><p>Une coupe verticale par le milieu de la scène. Elle complète le plan au sol en montrant ce qu'il ne dit pas : hauteurs, profondeurs, niveau du plateau, relation avec les éléments suspendus.</p></div>
@@ -109,7 +107,6 @@
       <div class="section__tete">
         <span class="etiquette etiquette--petite">une étape non produite</span>
         <h2>Le furniture plot</h2>
-        <span data-statut="non-produit"></span>
       </div>
       <div class="lettre papier papier--ligne incline" style="--r: -1deg;">
         <p>Dans un processus professionnel, on établirait ici l'inventaire du mobilier et des accessoires : ce qui doit être fabriqué, récupéré, loué ou emprunté, avec leur emplacement sur le plateau.</p>
@@ -120,6 +117,6 @@
   </main>
 
   <footer data-pied></footer>
-  <script src="../js/script.js?v=20261111-5"></script>
+  <script src="../js/script.js?v=20261111-6"></script>
 </body>
 </html>
