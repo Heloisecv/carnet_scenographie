@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>04 · La direction artistique développée — {titre}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- data-racine=".." : cette page est dans le dossier pages/ -->
+<body data-racine=".." data-page="04">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header data-entete></header>
+
+  <main id="contenu" class="page conteneur">
+
+    <!-- ======================== OUVERTURE DU CHAPITRE ======================== -->
+    <header class="chapitre">
+      <figure class="chapitre__objet" style="--x: 1%; --y: 4rem; --w: 150px; --r: -8deg;">
+        <div class="papier nuancier-carte"><span class="puce" style="background:#F2C7CF">?</span><span class="puce" style="background:#E7839B">?</span><span class="puce" style="background:#D9C3A5">?</span></div>
+      </figure>
+      <span class="chapitre__objet note-crayon note-crayon--encre" style="--xd: 5%; --y: 9rem; --w: 190px; --r: 4deg;">une phrase-clé à trouver…</span>
+      <span class="etiquette etiquette--cousue">Chapitre 04 · après les dessins</span>
+      <h1>La direction artistique développée</h1>
+      <span class="ornement" aria-hidden="true"></span>
+      <p class="chapeau">Une fois les dessins faits, la direction artistique se précise : couleurs, matières et finitions, décor par décor.</p>
+    </header>
+
+
+    <section class="section" id="phrase" data-nom="Phrase-clé">
+      <div class="colonne" style="text-align:center;">
+        <p class="a-ecrire" style="margin-inline:auto;">Une phrase qui résume ta direction artistique, écrite en grand à la plume.</p>
+      </div>
+    </section>
+
+    <!-- ✏️ Pour une vraie couleur : <div class="pastille" style="background:#A51C30; border:0"></div> -->
+    <section class="section" id="nuancier" data-nom="Nuancier">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">couleurs</span>
+        <h2>Le nuancier</h2>
+        <span data-statut="explorer"></span>
+      </div>
+      <div class="nuancier">
+        <figure><div class="pastille"></div><figcaption>[nom de la couleur]<span class="code">[réf. peinture]</span></figcaption></figure>
+        <figure><div class="pastille"></div><figcaption>[nom de la couleur]<span class="code">[réf. peinture]</span></figcaption></figure>
+        <figure><div class="pastille"></div><figcaption>[nom de la couleur]<span class="code">[réf. peinture]</span></figcaption></figure>
+        <figure><div class="pastille"></div><figcaption>[nom de la couleur]<span class="code">[réf. peinture]</span></figcaption></figure>
+        <figure><div class="pastille"></div><figcaption>[nom de la couleur]<span class="code">[réf. peinture]</span></figcaption></figure>
+        <figure><div class="pastille"></div><figcaption>[nom de la couleur]<span class="code">[réf. peinture]</span></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Pour ajouter un décor : copier un bloc <article class="decor-fiche">…</article> -->
+    <section class="section" id="decors" data-nom="Décor par décor">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">décor par décor</span>
+        <h2>Les décors</h2>
+      </div>
+      <article class="decor-fiche">
+        <div class="decor-fiche__texte">
+          <span data-statut="explorer"></span>
+          <h3 style="margin-top: var(--e-2); font-size: var(--t-xl);">Décor [à définir]</h3>
+          <p class="a-ecrire">Intention, couleurs, matières et finitions de ce décor.</p>
+          <h4>Matières</h4>
+          <div class="matieres">
+            <div class="emplacement"><span>matière</span></div><div class="emplacement"><span>matière</span></div>
+            <div class="emplacement"><span>matière</span></div><div class="emplacement"><span>matière</span></div>
+          </div>
+        </div>
+        <figure class="incline" style="--r: -1.5deg;">
+          <div class="emplacement scotch"><span>document de DA — décor annoté, cercles de couleur</span></div>
+          <figcaption><span class="num">FIG. 04.1</span>[légende à venir]</figcaption>
+        </figure>
+      </article>
+      <article class="decor-fiche">
+        <div class="decor-fiche__texte">
+          <span data-statut="explorer"></span>
+          <h3 style="margin-top: var(--e-2); font-size: var(--t-xl);">Décor [à définir]</h3>
+          <p class="a-ecrire">Intention, couleurs, matières et finitions de ce décor.</p>
+          <h4>Matières</h4>
+          <div class="matieres">
+            <div class="emplacement"><span>matière</span></div><div class="emplacement"><span>matière</span></div>
+            <div class="emplacement"><span>matière</span></div><div class="emplacement"><span>matière</span></div>
+          </div>
+        </div>
+        <figure class="incline" style="--r: 1.5deg;">
+          <div class="emplacement scotch"><span>document de DA — décor annoté, cercles de couleur</span></div>
+          <figcaption><span class="num">FIG. 04.2</span>[légende à venir]</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="section" id="document" data-nom="Document complet">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">à consulter</span>
+        <h2>Le document complet</h2>
+      </div>
+      <figure class="large incline" style="--r: .6deg; max-width: 900px;">
+        <div class="emplacement scotch" style="--ratio: 16/9;"><span>document de direction artistique (aperçu)</span></div>
+        <figcaption>[PDF à venir]</figcaption>
+      </figure>
+      <!-- ✏️ Quand le PDF existe : <a class="action" href="../documents/pdf/direction-artistique.pdf" target="_blank">Ouvrir le PDF</a> -->
+    </section>
+
+  </main>
+
+  <footer data-pied></footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>

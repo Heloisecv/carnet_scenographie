@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>05 · Maquettes matiérées et 3D — {titre}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- data-racine=".." : cette page est dans le dossier pages/ -->
+<body data-racine=".." data-page="05">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header data-entete></header>
+
+  <main id="contenu" class="page conteneur">
+
+    <!-- ======================== OUVERTURE DU CHAPITRE ======================== -->
+    <header class="chapitre">
+      <figure class="chapitre__objet" style="--x: 2%; --y: 3rem; --w: 190px; --r: -6deg;">
+        <div class="papier papier--kraft etiquette-kraft" style="padding-top:2.2rem;"><span class="plume" style="display:block; font-size:1rem;">Maquette A</span><span class="machine" style="font-size:.6rem;">échelle [—]</span></div>
+      </figure>
+      <figure class="chapitre__objet" style="--xd: 2%; --y: 5rem; --w: 230px; --r: 5deg;">
+        <div class="emplacement emplacement--polaroid scotch" style="padding:0;"><img src="../images/dessins/maquette-iso.svg" alt="" style="width:100%; height:100%; object-fit:cover;"></div>
+      </figure>
+      <span class="etiquette etiquette--cousue">Chapitre 05 · l'aboutissement</span>
+      <h1>Maquettes matiérées et 3D</h1>
+      <span class="ornement" aria-hidden="true"></span>
+      <p class="chapeau">Au moins deux grands décors développés en maquettes détaillées, matiérées et colorées, pour se représenter concrètement l'espace.</p>
+    </header>
+
+
+    <section class="section" id="decors" data-nom="Les deux décors">
+      <div class="duo">
+        <article style="margin-top: 0;">
+          <span class="etiquette etiquette--petite">Maquette A</span>
+          <figure class="incline" style="--r: -2deg;">
+            <div class="emplacement emplacement--polaroid scotch" style="--ratio: 4/5;"><span>maquette A — vue principale</span></div>
+          </figure>
+          <h3 style="font-size: var(--t-xl);">Décor [à définir]</h3>
+          <span data-statut="explorer"></span>
+          <p class="a-ecrire">Pourquoi ce décor, échelle, matériaux.</p>
+          <h4>Étapes de fabrication</h4>
+          <!-- Un <li>…</li> par étape : elles se numérotent seules -->
+          <ol class="fabrication"><li>[étape à décrire]</li></ol>
+        </article>
+        <article style="margin-top: var(--e-6);">
+          <span class="etiquette etiquette--petite">Maquette B</span>
+          <figure class="incline" style="--r: 2deg;">
+            <div class="emplacement emplacement--polaroid scotch" style="--ratio: 4/5;"><span>maquette B — vue principale</span></div>
+          </figure>
+          <h3 style="font-size: var(--t-xl);">Décor [à définir]</h3>
+          <span data-statut="explorer"></span>
+          <p class="a-ecrire">Pourquoi ce décor, échelle, matériaux.</p>
+          <h4>Étapes de fabrication</h4>
+          <!-- Un <li>…</li> par étape : elles se numérotent seules -->
+          <ol class="fabrication"><li>[étape à décrire]</li></ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="details" data-nom="Détails et essais">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">de près</span>
+        <h2>Détails, essais de couleurs et de textures</h2>
+      </div>
+      <div class="galerie-mosaique" data-galerie>
+        <figure><div class="emplacement scotch" style="--ratio: 16/10;"><span>détail</span></div><figcaption>[légende]</figcaption></figure>
+        <figure><div class="emplacement emplacement--polaroid" style="--ratio: 3/4;"><span>essai de texture</span></div><figcaption>[légende]</figcaption></figure>
+        <figure><div class="emplacement" style="--ratio: 1;"><span>essai de couleur</span></div><figcaption>[légende]</figcaption></figure>
+        <figure><div class="emplacement scotch scotch--beige" style="--ratio: 4/5;"><span>fabrication</span></div><figcaption>[légende]</figcaption></figure>
+        <figure><div class="emplacement" style="--ratio: 16/10;"><span>détail</span></div><figcaption>[légende]</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Comparaison : glisser pour comparer. Remplacer chaque emplacement par une <img> -->
+    <section class="section" id="comparaison" data-nom="Maquette ou 3D">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">comparer</span>
+        <h2>Maquette physique, modèle 3D</h2>
+        <span data-statut="explorer"></span>
+      </div>
+      <div class="comparaison large incline" style="--r: -.5deg; max-width: 1000px;">
+        <div class="comparaison__a"><div class="emplacement"><span>photo de la maquette physique</span></div></div>
+        <div class="comparaison__b"><div class="emplacement emplacement--sombre"><span>rendu 3D, même point de vue</span></div></div>
+        <span class="comparaison__poignee" aria-hidden="true"></span>
+        <span class="comparaison__etiquette comparaison__etiquette--a">maquette</span>
+        <span class="comparaison__etiquette comparaison__etiquette--b">3D</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Comparer la maquette et le rendu 3D">
+      </div>
+      <div class="tableau-comparatif">
+        <div class="papier papier--ligne incline" style="--r: -1deg;"><h3 style="margin-top:0;">La maquette physique</h3><p class="a-ecrire">Ses avantages et ses limites, d'après ton expérience.</p></div>
+        <div class="papier papier--ligne incline" style="--r: 1.2deg;"><h3 style="margin-top:0;">La modélisation 3D</h3><p class="a-ecrire">Ses avantages et ses limites, logiciel utilisé.</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer data-pied></footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>

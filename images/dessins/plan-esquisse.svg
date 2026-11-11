@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+<defs><filter id="r"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter></defs>
+<g filter="url(#r)" stroke="#4b2a2e" stroke-linecap="round">
+<path d="M70 40h260v130H70z" stroke-width="1.6"/>
+<path d="M60 170c40 18 240 18 280 0" stroke-width="1.6"/>
+<path d="M80 60v40M85 60v40M80 120v40M85 120v40M320 60v40M315 60v40M320 120v40M315 120v40" stroke-width="2.4"/>
+<path d="M100 50h200" stroke-width="1" stroke-dasharray="8 4"/>
+<path d="M200 30v250" stroke-width=".9" stroke-dasharray="14 4 2 4"/>
+<path d="M130 80h60v35h-60zM235 120h55v25h-55z" stroke-width="1.3"/>
+<path d="M100 205c60 14 140 14 200 0M90 225c70 16 150 16 220 0M80 245c80 18 160 18 240 0M72 265c86 19 170 19 256 0" stroke-width="1" stroke-dasharray="5 3"/>
+<path d="M70 22h260M70 17v10M330 17v10" stroke-width=".9"/>
+</g></svg>

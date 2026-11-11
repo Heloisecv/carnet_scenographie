@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{titre} — Scénographie pour Legally Blonde</title>
+  <meta name="description" content="Carnet de scénographe : simulation complète d'un projet de scénographie pour la comédie musicale Legally Blonde, de la lecture du livret aux maquettes.">
+  <!-- Polices Google Fonts (à modifier ici si on change de police) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-racine="." data-page="00">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header data-entete></header>
+
+  <main id="contenu">
+
+    <!-- ===========================================================
+         LE BUREAU : chaque objet posé ouvre une étape du projet.
+         Pour déplacer un objet : modifier --x (gauche), --y (haut),
+         --w (largeur) et --r (rotation) dans son style="…".
+         =========================================================== -->
+    <section class="bureau" aria-label="Les étapes du projet">
+
+      <!-- Le titre, au centre -->
+      <div class="bureau__titre">
+        <span class="petit">Carnet de scénographe</span>
+        <span class="petit">Comédie musicale étudiante</span>
+        <h1 data-titre-site>Titre à venir</h1>
+        <span class="note-crayon note-crayon--encre" style="display:block; margin-top:-.8rem; transform: rotate(-3deg);">(provisoire !)</span>
+        <span class="souligne" aria-hidden="true"></span>
+        <p class="sous-titre">Legally Blonde</p>
+        <p class="detail">Simulation d'un projet de scénographie · MPAA, Paris</p>
+        <a class="bureau__descendre" href="#projet" aria-label="Lire la présentation du projet"><span class="fleche fleche--bas"></span></a>
+      </div>
+
+      <!-- 01 · Page de livret annotée -->
+      <a class="objet" href="pages/01-lire-preparer.html" style="--x: 4%; --y: 7%; --w: 20%; --r: -6deg;">
+        <img class="trombone" src="images/dessins/trombone.svg" alt="">
+        <div class="papier papier--ligne dechire" style="padding-top: 1.1rem;">
+          <span class="machine" style="font-size:.66rem; letter-spacing:.14em; color: var(--crimson);">LIVRET · ACTE I · annoté</span>
+          <div class="faux-texte" aria-hidden="true">
+            <i class="perso"></i><i style="--l:94%"></i><i class="surl" style="--l:78%"></i><i style="--l:88%"></i><i class="court"></i>
+            <i class="perso"></i><i style="--l:91%"></i><i class="surl" style="--l:64%"></i><i style="--l:83%"></i><i class="court"></i>
+          </div>
+          <span class="cercle-encre" style="left: 54%; top: 46%; width: 34%; height: 2.2rem;"></span>
+          <span class="note-marge" style="left:.4rem; top: 54%; transform: rotate(-12deg);">lieu ?</span>
+        </div>
+        <span class="objet__nom"><span class="num">01</span>Lire, préparer</span>
+        <span data-statut-page="01"></span>
+        <span class="annotation" style="left: 112%; top: -15%;">commencer par lire le texte… plusieurs fois !<span class="fleche fleche--miroir" style="transform: scaleX(-1) rotate(25deg);"></span></span>
+      </a>
+
+      <!-- 02 · Polaroid de la maquette blanche -->
+      <a class="objet" href="pages/02-maquette-blanche.html" style="--x: 7%; --y: 59%; --w: 18%; --r: 4deg;">
+        <div class="emplacement emplacement--polaroid scotch scotch--beige" style="--ratio: 4/3; padding: 0; background: #E9E3D8;">
+          <img src="images/dessins/maquette-iso.svg" alt="" style="width:100%; height:100%; object-fit: cover;">
+        </div>
+        <span class="objet__nom"><span class="num">02</span>Maquette blanche</span>
+        <span data-statut-page="02"></span>
+        <span class="annotation" style="left: 58%; top: -40%;">tester l'espace avant de dessiner<span class="fleche fleche--bas" style="transform: rotate(18deg); margin-left: 1rem;"></span></span>
+      </a>
+
+      <!-- 03 · Plan sur papier millimétré -->
+      <a class="objet" href="pages/03-dessin-technique.html" style="--x: 33%; --y: 56%; --w: 25%; --r: -2deg;">
+        <div class="papier papier--quadrille scotch" style="padding: .8rem; --rs: 3deg;">
+          <img src="images/dessins/plan-esquisse.svg" alt="" style="width:100%;">
+          <span class="machine" style="position:absolute; right:.8rem; bottom:.5rem; font-size:.62rem; color: var(--crayon);">croquis · sans échelle</span>
+        </div>
+        <span class="objet__nom"><span class="num">03</span>Dessin technique</span>
+        <span data-statut-page="03"></span>
+      </a>
+
+      <!-- 04 · Nuancier -->
+      <a class="objet" href="pages/04-direction-artistique.html" style="--x: 61.5%; --y: 59%; --w: 12%; --r: 7deg;">
+        <div class="papier nuancier-carte">
+          <span class="puce" style="background:#F2C7CF">?</span>
+          <span class="puce" style="background:#E7839B">?</span>
+          <span class="puce" style="background:#A51C30; color: rgba(255,255,255,.7)">?</span>
+          <span class="puce" style="background:#D9C3A5">?</span>
+          <span class="machine" style="font-size:.58rem; color: var(--crayon); letter-spacing:.1em;">NUANCIER N° —</span>
+        </div>
+        <span class="objet__nom"><span class="num">04</span>Direction artistique</span>
+        <span data-statut-page="04"></span>
+        <span class="annotation annotation--encre" style="left: -4%; top: -34%;">les couleurs, encore à trouver…<span class="fleche fleche--boucle" style="transform: rotate(40deg);"></span></span>
+      </a>
+
+      <!-- 05 · Étiquette kraft -->
+      <a class="objet" href="pages/05-maquettes-3d.html" style="--x: 81%; --y: 9%; --w: 13.5%; --r: 9deg;">
+        <span class="ficelle" aria-hidden="true"></span>
+        <div class="papier papier--kraft etiquette-kraft">
+          <span class="machine" style="font-size:.6rem; letter-spacing:.18em;">CARTON PLUME · 3D</span>
+          <span class="plume" style="display:block;">Maquettes</span>
+          <span class="machine" style="font-size:.6rem; letter-spacing:.12em;">au moins 2 décors</span>
+        </div>
+        <span class="objet__nom"><span class="num">05</span>Maquettes &amp; 3D</span>
+        <span data-statut-page="05"></span>
+        <span class="annotation" style="right: 108%; left: auto; top: 50%; text-align: right;">l'aboutissement<span class="fleche" style="margin-left:auto;"></span></span>
+      </a>
+
+      <!-- 06 · Le carnet -->
+      <a class="objet" href="pages/06-carnet.html" style="--x: 80%; --y: 49%; --w: 15%; --r: -5deg;">
+        <div class="carnet-couv">
+          <div class="carnet-couv__etiquette">
+            <span class="plume">Carnet de bord</span>
+            <span class="machine">N° 1 · ressources *</span>
+          </div>
+        </div>
+        <span class="objet__nom"><span class="num">06</span>Carnet</span>
+        <span data-statut-page="06"></span>
+      </a>
+
+      <!-- 00 · Le billet : descend vers la présentation -->
+      <a class="objet" href="#projet" style="--x: 66%; --y: 31%; --w: 15%; --r: 5deg;">
+        <div class="billet">
+          <div class="billet__corps">
+            <span class="machine">COMÉDIE MUSICALE</span>
+            <span class="plume">Legally Blonde</span>
+            <span class="machine">MPAA · PARIS · [date]</span>
+          </div>
+          <span class="billet__souche">N° 00</span>
+        </div>
+      </a>
+
+      <!-- Objets décoratifs -->
+      <img class="deco" src="images/dessins/loupe.svg" alt="" style="--x: 24%; --y: 36%; --w: 8.5%; --r: 20deg;">
+      <img class="deco" src="images/dessins/crayon.svg" alt="" style="--x: 1%; --y: 92%; --w: 21%; --r: -9deg;">
+    </section>
+
+
+    <!-- ===========================================================
+         LE RÉCIT : la présentation du projet
+         =========================================================== -->
+    <article class="recit conteneur" id="projet">
+
+      <header class="ouverture">
+        <span class="etiquette etiquette--cousue">Chapitre 00</span>
+        <h2 style="font-size: var(--t-xxl);">Le projet</h2>
+        <span class="ornement" aria-hidden="true"></span>
+        <p class="chapeau">Un carnet de scénographe pour <em>Legally Blonde</em> : comment un décor se pense, s'imagine, se dessine, se teste et se remet en question.</p>
+      </header>
+
+      <div class="colonne">
+        <figure class="marge-g incline" style="--r: -4deg;">
+          <div class="emplacement emplacement--polaroid scotch"><span>photo de la troupe ou des répétitions</span></div>
+          <figcaption>[légende à venir]</figcaption>
+        </figure>
+
+        <h4>La production</h4>
+        <p class="a-ecrire">Présenter la production réelle de Legally Blonde : la troupe, l'équipe, les dates, le lieu.</p>
+
+        <h4>Mon rôle au pôle décor</h4>
+        <p class="a-ecrire">Ta place dans l'équipe décor et tes échanges avec la mise en scène.</p>
+
+        <figure class="marge-d incline" style="--r: 3deg;">
+          <div class="emplacement scotch scotch--beige" style="--ratio: 3/4;"><span>un croquis, une page du carnet</span></div>
+          <figcaption>[légende à venir]</figcaption>
+        </figure>
+
+        <h4>Pourquoi ce projet</h4>
+        <p class="a-ecrire">Ta motivation : scénographie, direction artistique, décor de cinéma, spectacle vivant, candidatures.</p>
+      </div>
+
+      <!-- Le principe : une lettre posée sur la table -->
+      <div class="lettre papier papier--ligne scotch scotch--coin incline" style="--r: -1deg;">
+        <span class="etiquette etiquette--petite">Le principe</span>
+        <p class="exergue">Concevoir une scénographie comme si elle devait être construite.</p>
+        <p style="margin-top: var(--e-2);">Ce projet est un exercice : une simulation complète du travail d'un·e scénographe, menée de A à Z sur un vrai spectacle. Elle aboutit à des maquettes. Elle ne sera pas construite telle quelle sur scène.</p>
+        <p class="a-ecrire" style="--r: 1.5deg;">Pourquoi cette simulation, ce que tu cherches à apprendre, et pourquoi certaines étapes se concentrent sur les décors les plus récurrents.</p>
+      </div>
+
+      <!-- Le théâtre -->
+      <header class="ouverture" style="padding-top: var(--e-5); padding-bottom: 0;">
+        <span class="etiquette etiquette--cousue">Le lieu</span>
+        <h2>Le théâtre et son plateau</h2>
+      </header>
+
+      <div class="theatre">
+        <figure class="incline" style="--r: -1.2deg;">
+          <div class="papier papier--quadrille scotch" style="padding: .8rem;">
+            <div class="emplacement" style="--ratio: 4/3; border: 0; box-shadow: none; background-color: transparent;"><span>plan de la salle — extrait choisi des documents de la MPAA</span></div>
+          </div>
+          <figcaption><span class="num">FIG. 00.1</span>Plan de la salle. Source : MPAA. [à compléter]</figcaption>
+        </figure>
+
+        <div>
+          <div class="papier incline" style="--r: 1.5deg;">
+            <dl class="donnees">
+              <dt>Lieu</dt>        <dd>MPAA (Maison des Pratiques Artistiques Amateurs), Paris</dd>
+              <dt>Salle</dt>       <dd>[à préciser]</dd>
+              <dt>Ouverture</dt>   <dd>[à coter]</dd>
+              <dt>Profondeur</dt>  <dd>[à coter]</dd>
+              <dt>Hauteur</dt>     <dd>[à coter]</dd>
+              <dt>Jauge</dt>       <dd>[à préciser]</dd>
+              <dt>Contraintes</dt> <dd>[à préciser]</dd>
+            </dl>
+          </div>
+          <p class="note-crayon" style="margin-top: var(--e-3);">plans et données : documents publiés par la MPAA [lien à ajouter]</p>
+        </div>
+      </div>
+
+      <!-- L'astérisque -->
+      <div class="asterisque">
+        <span class="asterisque__signe" aria-hidden="true">*</span>
+        <h2>Apprendre en faisant</h2>
+        <p class="colonne">Ce carnet documente aussi un apprentissage. Les méthodes, tutoriels, livres et outils qui m'ont servi sont rassemblés dans le carnet de bord.</p>
+        <a class="action" href="pages/06-carnet.html#ressources">Toutes les ressources</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer data-pied></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

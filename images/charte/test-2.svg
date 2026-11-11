@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1300" viewBox="0 0 1000 1300">
+<defs><pattern id="h" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="20" stroke="#F6F0E6" stroke-opacity=".15" stroke-width="2"/></pattern></defs>
+<rect width="100%" height="100%" fill="#7A1424"/><rect width="100%" height="100%" fill="url(#h)"/>
+<text x="50%" y="50%" text-anchor="middle" font-family="monospace" font-size="48" fill="#F6F0E6">IMAGE DE TEST 2</text>
+</svg>

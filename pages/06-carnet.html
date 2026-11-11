@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>06 · Carnet de bord et ressources — {titre}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- data-racine=".." : cette page est dans le dossier pages/ -->
+<body data-racine=".." data-page="06">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header data-entete></header>
+
+  <main id="contenu" class="page conteneur">
+
+    <!-- ======================== OUVERTURE DU CHAPITRE ======================== -->
+    <header class="chapitre">
+      <figure class="chapitre__objet" style="--x: 3%; --y: 3rem; --w: 170px; --r: -7deg;">
+        <div class="carnet-couv"><div class="carnet-couv__etiquette"><span class="plume" style="font-size:.85rem;">Carnet</span></div></div>
+      </figure>
+      <img class="chapitre__objet" src="../images/dessins/loupe.svg" alt="" style="--xd: 6%; --y: 6rem; --w: 130px; --r: 25deg;">
+      <span class="etiquette etiquette--cousue">Chapitre 06 · ce qui reste du chemin</span>
+      <h1>Carnet de bord et ressources</h1>
+      <span class="ornement" aria-hidden="true"></span>
+      <p class="chapeau">Le journal du projet, daté, avec ses découvertes et ses difficultés. Et, en regard, tout ce qui m'a permis d'apprendre.</p>
+    </header>
+
+
+    <div class="carnet-grille">
+      <!-- Journal : se remplit depuis contenu/journal.js -->
+      <section class="section papier papier--ligne incline" id="journal" data-nom="Journal" style="--r: -.6deg;">
+        <span class="etiquette etiquette--petite">Journal</span>
+        <h2>Au fil des semaines</h2>
+        <div data-liste="journal"></div>
+      </section>
+
+      <!-- Ressources (« l'astérisque ») : se remplissent depuis contenu/ressources.js -->
+      <section class="section" id="ressources" data-nom="Ressources">
+        <span class="etiquette etiquette--petite">* Ressources</span>
+        <h2>Ce qui m'a appris</h2>
+        <div data-liste="ressources"></div>
+      </section>
+    </div>
+
+    <section class="section" id="prochaines-etapes" data-nom="Prochaines étapes">
+      <div class="colonne"><p class="a-ecrire">Prochaines étapes : ce qui vient ensuite.</p></div>
+    </section>
+
+  </main>
+
+  <footer data-pied></footer>
+  <script src="../contenu/journal.js"></script>
+  <script src="../contenu/ressources.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

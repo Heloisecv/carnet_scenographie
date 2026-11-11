@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>03 · Du volume au dessin technique — {titre}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- data-racine=".." : cette page est dans le dossier pages/ -->
+<body data-racine=".." data-page="03">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header data-entete></header>
+
+  <main id="contenu" class="page conteneur">
+
+    <!-- ======================== OUVERTURE DU CHAPITRE ======================== -->
+    <header class="chapitre">
+      <figure class="chapitre__objet" style="--x: 0; --y: 2rem; --w: 270px; --r: -4deg;">
+        <div class="papier papier--quadrille scotch" style="padding:.6rem;"><img src="../images/dessins/plan-esquisse.svg" alt=""></div>
+      </figure>
+      <span class="chapitre__objet note-crayon note-crayon--encre" style="--xd: 3%; --y: 7rem; --w: 190px; --r: 5deg;">du plus grand élément au plus petit</span>
+      <span class="etiquette etiquette--cousue">Chapitre 03 · le dossier technique</span>
+      <h1>Du volume au dessin technique</h1>
+      <span class="ornement" aria-hidden="true"></span>
+      <p class="chapeau">Traduire la maquette en documents précis, cotés, lisibles par celles et ceux qui construiraient le décor. Le travail se concentre sur les décors qui reviennent le plus souvent.</p>
+    </header>
+
+
+    <!-- Registre des dessins : modifier data-statut="…" pour changer un statut -->
+    <section class="section" id="registre" data-nom="Registre">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">index</span>
+        <h2>Registre des dessins</h2>
+      </div>
+      <div class="papier papier--ligne incline large" style="--r: .4deg; max-width: 1000px;">
+        <div class="tableau-conteneur">
+          <table class="tableau-tech">
+            <thead><tr><th>N°</th><th>Document</th><th>Échelle</th><th>Logiciel</th><th>Version</th><th>Statut</th></tr></thead>
+            <tbody>
+              <tr><td>D-01</td><td>Plan au sol avec masking</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
+              <tr><td>D-02</td><td>Coupe sur l'axe central</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
+              <tr><td>D-03</td><td>Fonds et cycloramas</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
+              <tr><td>D-04</td><td>Mobilier construit sur mesure</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
+              <tr><td>D-05</td><td>Accessoires construits sur mesure</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
+              <tr><td>D-06</td><td>Élévations de peinture</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
+              <tr><td>D-07</td><td>Luminaires intégrés au décor</td><td>[—]</td><td>[—]</td><td>—</td><td><span data-statut="explorer"></span></td></tr>
+              <tr><td>—</td><td>Furniture plot (inventaire du mobilier)</td><td>—</td><td>—</td><td>—</td><td><span data-statut="non-produit"></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plan-au-sol" data-nom="Plan au sol">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">D-01</span>
+        <h2>Le plan au sol avec masking</h2>
+      </div>
+      <article class="planche papier papier--quadrille scotch large" style="max-width: 1050px;">
+        <!-- ✏️ Remplacer l'emplacement par :
+             <a class="zoom" href="../documents/plans/d-01.png"><img src="../images/03-dessin-technique/d-01.jpg" alt="Plan au sol avec masking"></a> -->
+        <div class="emplacement"><span>D-01 · Plan au sol avec masking</span></div>
+        <div class="cartouche">
+          <div><span class="cle">Document</span><span class="nom">Plan au sol avec masking</span></div>
+          <div><span class="cle">N°</span>D-01</div>
+          <div><span class="cle">Échelle</span>[—]</div>
+          <div><span class="cle">Version</span>[—]</div>
+          <div><span class="cle">Date</span>[—]</div>
+          <div><span data-statut="explorer"></span></div>
+        </div>
+        <div class="fonction">
+          <div><h4>À quoi sert ce document</h4><p>Il représente la scène vue du dessus avec les éléments de décor, les limites du plateau et le masking : pendrillons et frises qui cachent les coulisses au public. Il fait comprendre l'implantation, les dimensions, les accès et les zones cachées.</p></div>
+          <div><h4>Mes choix</h4><p class="a-ecrire">Ce que tu as dessiné, sur quels décors tu t'es concentrée, ce que le dessin t'a appris.</p>
+            <!-- ✏️ Quand le PDF existe : <a class="action" href="../documents/plans/d-01.pdf" target="_blank">Ouvrir le PDF</a> --></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="coupe" data-nom="Coupe centrale">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">D-02</span>
+        <h2>La coupe sur l'axe central</h2>
+      </div>
+      <article class="planche papier papier--quadrille scotch large" style="max-width: 1050px;">
+        <!-- ✏️ Remplacer l'emplacement par :
+             <a class="zoom" href="../documents/plans/d-02.png"><img src="../images/03-dessin-technique/d-02.jpg" alt="Coupe sur l'axe central"></a> -->
+        <div class="emplacement"><span>D-02 · Coupe sur l'axe central</span></div>
+        <div class="cartouche">
+          <div><span class="cle">Document</span><span class="nom">Coupe sur l'axe central</span></div>
+          <div><span class="cle">N°</span>D-02</div>
+          <div><span class="cle">Échelle</span>[—]</div>
+          <div><span class="cle">Version</span>[—]</div>
+          <div><span class="cle">Date</span>[—]</div>
+          <div><span data-statut="explorer"></span></div>
+        </div>
+        <div class="fonction">
+          <div><h4>À quoi sert ce document</h4><p>Une coupe verticale par le milieu de la scène. Elle complète le plan au sol en montrant ce qu'il ne dit pas : hauteurs, profondeurs, niveau du plateau, relation avec les éléments suspendus.</p></div>
+          <div><h4>Mes choix</h4><p class="a-ecrire">Ce que tu as dessiné, sur quels décors tu t'es concentrée, ce que le dessin t'a appris.</p>
+            <!-- ✏️ Quand le PDF existe : <a class="action" href="../documents/plans/d-02.pdf" target="_blank">Ouvrir le PDF</a> --></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="furniture-plot" data-nom="Furniture plot">
+      <div class="section__tete">
+        <span class="etiquette etiquette--petite">une étape non produite</span>
+        <h2>Le furniture plot</h2>
+        <span data-statut="non-produit"></span>
+      </div>
+      <div class="lettre papier papier--ligne incline" style="--r: -1deg;">
+        <p>Dans un processus professionnel, on établirait ici l'inventaire du mobilier et des accessoires : ce qui doit être fabriqué, récupéré, loué ou emprunté, avec leur emplacement sur le plateau.</p>
+        <p class="a-ecrire">Pourquoi cette étape n'est pas réalisée dans cette simulation.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer data-pied></footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>

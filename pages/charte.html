@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charte graphique — {titre}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- data-racine=".." : cette page est dans le dossier pages/ -->
+<body data-racine=".." data-page="charte">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header data-entete></header>
+
+  <main id="contenu" class="page conteneur">
+
+    <!-- ======================== OUVERTURE DU CHAPITRE ======================== -->
+    <header class="chapitre">
+
+      <span class="etiquette etiquette--cousue">Chapitre — · page de travail</span>
+      <h1>Charte graphique</h1>
+      <span class="ornement" aria-hidden="true"></span>
+      <p class="chapeau">Toutes les briques visuelles du carnet, réunies pour les valider. Les réglages se font en haut de css/style.css.</p>
+    </header>
+
+    <section class="section" id="palette" data-nom="Palette">
+      <div class="section__tete"><span class="etiquette etiquette--petite">01</span><h2>Papiers et encres</h2></div>
+      <div class="charte-nuances">
+        <figure><div style="background: var(--papier)"></div><figcaption>papier ancien — le fond<span class="code">#EFE6DA</span></figcaption></figure>
+        <figure><div style="background: var(--papier-clair)"></div><figcaption>feuilles posées<span class="code">#FBF8F2</span></figcaption></figure>
+        <figure><div style="background: var(--kraft)"></div><figcaption>kraft — étiquettes<span class="code">#C9A784</span></figcaption></figure>
+        <figure><div style="background: var(--post-it)"></div><figcaption>post-it — textes à écrire<span class="code">#F7D3D9</span></figcaption></figure>
+        <figure><div style="background: var(--rose)"></div><figcaption>rose « Elle » — scotch, accents<span class="code">#E7839B</span></figcaption></figure>
+        <figure><div style="background: var(--crimson)"></div><figcaption>crimson Harvard — l'encre<span class="code">#A51C30</span></figcaption></figure>
+        <figure><div style="background: var(--crimson-sec)"></div><figcaption>encre séchée — le carnet<span class="code">#7A1424</span></figcaption></figure>
+        <figure><div style="background: var(--encre)"></div><figcaption>brun d'encre — le texte<span class="code">#3A2523</span></figcaption></figure>
+        <figure><div style="background: var(--crayon)"></div><figcaption>graphite — annotations<span class="code">#6B625E</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section" id="typo" data-nom="Typographie">
+      <div class="section__tete"><span class="etiquette etiquette--petite">02</span><h2>Cinq écritures</h2></div>
+      <div class="charte-typo"><h4>La plume — Homemade Apple</h4><span class="plume" style="font-size: var(--t-xl); line-height:1.6;">Le décor pensé, dessiné</span></div>
+      <div class="charte-typo"><h4>Capitales — Georgia</h4><span class="etiquette etiquette--cousue" style="margin:0;">Chapitre 02 · la maquette</span></div>
+      <div class="charte-typo"><h4>Texte — Playfair Display</h4><p style="margin:0;">Le texte courant, pour la lecture longue. <em>L'italique pour les chapeaux et sous-titres.</em> Les liens <a href="#">ressemblent à ceci</a>.</p></div>
+      <div class="charte-typo"><h4>Machine — Special Elite</h4><span class="machine">FIG. 02.1 · échelle 1:50 · 09.11.2026</span></div>
+      <div class="charte-typo"><h4>Crayon — Reenie Beanie</h4><span class="note-crayon">à vérifier avec la mise en scène ! → [à coter]</span></div>
+    </section>
+
+    <section class="section" id="statuts" data-nom="Tampons">
+      <div class="section__tete"><span class="etiquette etiquette--petite">03</span><h2>Les tampons</h2></div>
+      <div class="charte-statuts">
+        <span data-statut="explorer"></span><span data-statut="en-cours"></span><span data-statut="valider"></span>
+        <span data-statut="retenu"></span><span data-statut="realise"></span><span data-statut="non-produit"></span>
+      </div>
+    </section>
+
+    <section class="section" id="objets" data-nom="Objets">
+      <div class="section__tete"><span class="etiquette etiquette--petite">04</span><h2>Les objets du carnet</h2></div>
+      <div class="galerie-grille">
+        <figure><div class="emplacement scotch"><span>photo à venir</span></div><figcaption>emplacement d'image</figcaption></figure>
+        <figure><div class="emplacement emplacement--polaroid scotch scotch--beige"><span>polaroid à venir</span></div><figcaption>variante polaroid</figcaption></figure>
+        <figure><div class="papier papier--ligne dechire" style="min-height:150px;"><span class="note-crayon">papier ligné, bord déchiré</span></div></figure>
+        <figure><div class="papier papier--quadrille" style="min-height:150px;"><span class="note-crayon">papier millimétré</span></div></figure>
+      </div>
+      <div class="colonne" style="margin-top: var(--e-5);">
+        <p class="a-ecrire">Le post-it signale tout texte encore à rédiger.</p>
+        <div class="cote">ligne de cote — 00,00 m</div>
+        <p style="text-align:center;"><a class="action" href="#">Une étiquette d'action</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="test" data-nom="Visionneuse">
+      <div class="section__tete"><span class="etiquette etiquette--petite">05</span><h2>Tester l'agrandissement</h2><p class="note-crayon">clique sur une image · flèches pour naviguer · Échap pour fermer</p></div>
+      <div class="galerie-grille" data-galerie>
+        <figure><a class="zoom photo" href="../images/charte/test-1.svg"><img src="../images/charte/test-1.svg" alt="Image de test 1" loading="lazy"></a><figcaption><span class="num">TEST 1</span>légende de démonstration</figcaption></figure>
+        <figure class="scotch"><a class="zoom photo photo--polaroid" href="../images/charte/test-2.svg"><img src="../images/charte/test-2.svg" alt="Image de test 2" loading="lazy"></a><figcaption><span class="num">TEST 2</span>en polaroid</figcaption></figure>
+        <figure><a class="zoom photo" href="../images/charte/test-3.svg"><img src="../images/charte/test-3.svg" alt="Image de test 3" loading="lazy"></a><figcaption><span class="num">TEST 3</span>légende de démonstration</figcaption></figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer data-pied></footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
