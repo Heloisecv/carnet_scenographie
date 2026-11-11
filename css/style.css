@@ -110,15 +110,15 @@ code { font-family: var(--machine); font-size: .9em; }
    ===================================================================== */
 .entete { position: relative; z-index: 60; }
 .entete__ligne {
-  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--e-3);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: var(--e-3);
   padding-block: var(--e-3) var(--e-2);
 }
-.menu { display: flex; gap: clamp(.8rem, 2vw, 2.4rem); list-style: none; margin: 0; padding: 0; }
+.menu { display: flex; gap: clamp(.65rem, 1vw, 1rem); list-style: none; margin: 0; padding: 0; }
 .menu--gauche { justify-content: flex-start; }
 .menu--droite { justify-content: flex-end; }
 .menu a {
   font-family: var(--capitales); font-weight: 600; font-size: var(--t-xs);
-  text-transform: uppercase; letter-spacing: .18em;
+  text-transform: uppercase; letter-spacing: .12em;
   color: var(--encre); text-decoration: none; white-space: nowrap;
   padding-bottom: .3rem; border-bottom: 1.5px dashed transparent;
 }
@@ -129,9 +129,15 @@ code { font-family: var(--machine); font-size: .9em; }
 .entete__titre {
   font-family: var(--plume); font-size: clamp(1.15rem, .9rem + .9vw, 1.7rem);
   color: var(--crimson); text-decoration: none; text-align: center; line-height: 1.6;
-  padding-inline: var(--e-2); white-space: nowrap;
+  justify-self: center; padding-inline: .5rem; white-space: nowrap;
 }
 .entete__titre:hover { text-decoration: none; color: var(--crimson-sec); }
+
+@media (max-width: 1500px) {
+  .menu { gap: .6rem; }
+  .menu a { letter-spacing: .1em; }
+  .entete__titre { font-size: 1.25rem; padding-inline: .25rem; }
+}
 
 .bouton-menu {
   display: none; justify-self: end;
@@ -179,6 +185,13 @@ code { font-family: var(--machine); font-size: .9em; }
 .suite a:hover .titre { color: var(--crimson-sec); }
 .pied { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--e-2); padding-block: var(--e-4) var(--e-5); font-family: var(--machine); font-size: var(--t-xs); color: var(--crayon); }
 .pied a { color: var(--crayon); }
+
+@media (max-width: 1200px) {
+  .entete__ligne { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  .entete__ligne > nav { display: none; }
+  .entete__titre { grid-column: 2; max-width: calc(100vw - 9rem); }
+  .bouton-menu { display: inline-block; grid-column: 3; }
+}
 
 
 /* =====================================================================
@@ -689,9 +702,8 @@ figcaption .num, .legende .num { font-family: var(--machine); font-size: var(--t
 @media (max-width: 760px) {
   :root { --t-m: 1rem; }
   .entete__ligne { grid-template-columns: 1fr auto; }
-  .entete__ligne > nav { display: none; }
-  .entete__titre { text-align: left; padding: 0; }
-  .bouton-menu { display: inline-block; }
+  .entete__titre { grid-column: 1; justify-self: start; max-width: calc(100vw - 7rem); text-align: left; padding: 0; white-space: normal; }
+  .bouton-menu { grid-column: 2; }
   .bureau { grid-template-columns: 1fr; gap: 3.6rem; }
   .objet, .objet--large { width: min(88%, 340px); justify-self: center; }
   .objet:has(.carnet-couv) { width: min(70%, 250px); }
