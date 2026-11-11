@@ -27,7 +27,7 @@ const SITE = {
   // Les pages du parcours, dans l'ordre.
   // statut possible : "explorer", "en-cours", "valider", "retenu", "realise"
   pages: [
-    { num: "00", court: "L'origine du projet", titre: "L'origine du projet",        fichier: "index.html",                        statut: "en-cours" },
+    { num: "00", court: "L'origine du projet", titre: "L'origine du projet",        fichier: "pages/00-origine-projet.html",        statut: "en-cours" },
     { num: "01", court: "Lire, préparer", titre: "Lire, préparer, rechercher",       fichier: "pages/01-lire-preparer.html",       statut: "en-cours" },
     { num: "02", court: "Maquette blanche", titre: "La maquette blanche",            fichier: "pages/02-maquette-blanche.html",    statut: "explorer" },
     { num: "03", court: "Dessin technique", titre: "Du volume au dessin technique",  fichier: "pages/03-dessin-technique.html",    statut: "explorer" },
@@ -64,7 +64,7 @@ document.querySelectorAll("[data-titre-site]").forEach((el) => (el.textContent =
 document.title = document.title.replace("{titre}", SITE.titre);
 
 
-/* ----- 2b. En-tête : 3 étapes à gauche, le titre au centre, 3 à droite */
+/* ----- 2b. En-tête : les étapes sont réparties autour du titre */
 const entete = document.querySelector("[data-entete]");
 if (entete) {
   const lien = (p) => `
