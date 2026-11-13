@@ -289,8 +289,10 @@ figcaption .num, .legende .num { font-family: var(--machine); font-size: var(--t
 .statut--realise   { color: #2F5D50; border-width: 3px; }
 .statut--non-produit { color: var(--crayon); border-style: dotted; text-decoration: line-through; }
 
-/* --- TEXTE À ÉCRIRE : un post-it rose ------------------------------ */
-.a-ecrire {
+/* --- TEXTE À ÉCRIRE : un post-it rose ------------------------------
+   .a-ecrire = post-it avec la mention « À ÉCRIRE » (texte pas encore rédigé)
+   .post-it  = le même post-it rose, SANS la mention (texte terminé)        */
+.a-ecrire, .post-it {
   position: relative; display: block; width: fit-content; max-width: 30rem;
   background: var(--post-it) url("../images/dessins/grain.svg");
   box-shadow: var(--ombre);
@@ -303,7 +305,14 @@ figcaption .num, .legende .num { font-family: var(--machine); font-size: var(--t
   content: "À ÉCRIRE"; position: absolute; top: .5rem; left: 1.2rem;
   font-family: var(--machine); font-size: .66rem; letter-spacing: .2em; color: var(--crimson);
 }
-.a-ecrire:nth-of-type(2n) { --r: 1deg; }
+.a-ecrire:nth-of-type(2n), .post-it:nth-of-type(2n) { --r: 1deg; }
+.post-it { padding-top: 1rem; } /* pas de mention en haut : moins d'espace */
+/* Petite mention modifiable en haut d'un post-it (même look que « À ÉCRIRE ») :
+   <p class="post-it"><span class="post-it__mention">Ma mention</span>Mon texte</p> */
+.post-it__mention {
+  display: block; margin-bottom: .2rem;
+  font-family: var(--machine); font-size: .66rem; letter-spacing: .2em; text-transform: uppercase; color: var(--crimson);
+}
 
 /* --- Ligne de cote (comme sur un plan) ------------------------------ */
 .cote { display: flex; align-items: center; gap: .8rem; font-family: var(--machine); font-size: var(--t-xs); color: var(--crimson); margin-block: var(--e-4); }
